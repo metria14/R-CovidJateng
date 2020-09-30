@@ -5,7 +5,7 @@ cov_id_update <- cov_id_raw$update
 str(cov_id_update)
 str(cov_id_raw)
 
-# Mengakses Data Master Perkembangan Covid di Jawa Tengah Bulan September tanggal 24
+# Mengakses Data Master Perkembangan Covid di Jawa Tengah Bulan September 
 library(httr)
 library (xml2)
 resp_jateng <- GET("https://data.covid19.go.id/public/api/prov_detail_JAWA_TENGAH.json")
@@ -27,7 +27,7 @@ cov_jateng$AKUMULASI_KASUS
 cov_jateng$AKUMULASI_SEMBUH
 cov_jateng$AKUMULASI_MENINGGAL
 
-# menjinakkan data
+# menjinakkan data 
 library(dplyr)
 new_cov_jateng <- 
   cov_jateng %>% 
