@@ -1,3 +1,4 @@
+#ahaayy ada aisar disini hehe
 # covid Indonesia
 resp <- GET("https://data.covid19.go.id/public/api/update.json")
 cov_id_raw <- content(resp, as ="parsed", simplifyVector = TRUE)
